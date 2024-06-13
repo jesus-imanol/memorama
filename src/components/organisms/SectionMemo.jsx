@@ -30,7 +30,7 @@ function SectionMemo() {
 
     const handleCardClick = (index) => {
         if (flippedCards.length === 2 || matchedCards.includes(index)) return;
-
+        
         const newFlippedCards = [...flippedCards, index];
         setFlippedCards(newFlippedCards);
 
@@ -77,11 +77,11 @@ function SectionMemo() {
     };
 
     return (<>
+        
+        <section id="memo_section">
         <Text text={"Movimientos: "+ moves} src={"hongo.png"}>
                 <Button onClick={resetGame} text={"Reiniciar"}></Button>
             </Text>
-        <section id="memo_section">
-            
             {cards.map((item, index) => (
                 <Cards
                     key={index}
