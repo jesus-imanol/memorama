@@ -1,0 +1,11 @@
+#memo_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 10px 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
